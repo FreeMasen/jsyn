@@ -10,7 +10,7 @@ description = "An experimental crate for converting rust to javascript"
 "syn_tests" = [ "reqwest", "lazy_static" ]
 
 [dependencies]
-ressa = "0.4"
-syn = {version = "0.15", features = ["full", "extra-traits"]}
-reqwest = { version = "0.9.9", optional = true }
+resast = { git = "https://github.com/FreeMasen/resast", branch = "next" }
+syn = {version = "1", features = ["full", "extra-traits"]}
+reqwest = { version = "0.9", optional = true }
 lazy_static = { version = "1", optional = true }
