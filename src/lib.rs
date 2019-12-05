@@ -441,7 +441,7 @@ mod tests {
             assert_eq!(
                 part,
                 ProgramPart::Decl(Decl::Var(
-                    VarKind::Const,
+                    VarKind::Let,
                     vec![VarDecl {
                         id: Pat::ident_from("X"),
                         init: Some(Expr::Array(vec![

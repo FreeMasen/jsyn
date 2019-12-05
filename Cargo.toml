@@ -5,12 +5,9 @@ authors = ["rfm <r@robertmasen.pizza>"]
 edition = "2018"
 description = "An experimental crate for converting rust to javascript"
 
-
-[features]
-"syn_tests" = [ "reqwest", "lazy_static" ]
-
 [dependencies]
-resast = { git = "https://github.com/FreeMasen/resast", branch = "next" }
+resast = "0.4.0"
 syn = {version = "1", features = ["full", "extra-traits"]}
-reqwest = { version = "0.9", optional = true }
-lazy_static = { version = "1", optional = true }
+
+[dev-dependencies]
+resw = { git = "https://github.com/FreeMasen/resw", branch = "next" }
